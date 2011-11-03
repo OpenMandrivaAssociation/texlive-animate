@@ -1,3 +1,9 @@
+# revision 23986
+# category Package
+# catalog-ctan /macros/latex/contrib/animate
+# catalog-date 2011-09-16 12:11:37 +0200
+# catalog-license lppl
+# catalog-version undef
 Name:		texlive-animate
 Version:	20110916
 Release:	1
@@ -52,6 +58,7 @@ text.
 %doc %{_texmfdistdir}/doc/latex/animate/files/mailto.eps
 %doc %{_texmfdistdir}/doc/latex/animate/files/scarab.mp
 %doc %{_texmfdistdir}/doc/latex/animate/files/timeline.txt
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -62,3 +69,5 @@ text.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
