@@ -1,11 +1,11 @@
-# revision 23986
+# revision 24901
 # category Package
 # catalog-ctan /macros/latex/contrib/animate
-# catalog-date 2011-09-16 12:11:37 +0200
+# catalog-date 2011-12-21 10:39:14 +0100
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-animate
-Version:	20110916
+Version:	20111221
 Release:	1
 Summary:	Create PDF animations from graphics files and inline graphics
 Group:		Publishing
@@ -17,8 +17,6 @@ BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 The package provides an interface to create portable,
@@ -28,19 +26,19 @@ PSTricks or pgf/TikZ generated pictures, or just from typeset
 text.
 
 %pre
-    %_texmf_mktexlsr_pre
+    %{_sbindir}/texlive.post
 
 %post
-    %_texmf_mktexlsr_post
+    %{_sbindir}/texlive.post
 
 %preun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_pre
+	%{_sbindir}/texlive.post
     fi
 
 %postun
     if [ $1 -eq 0 ]; then
-	%_texmf_mktexlsr_post
+	%{_sbindir}/texlive.post
     fi
 
 #-----------------------------------------------------------------------
