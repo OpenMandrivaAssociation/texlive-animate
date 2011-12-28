@@ -25,16 +25,8 @@ from inline graphics, such as LaTeX picture environment,
 PSTricks or pgf/TikZ generated pictures, or just from typeset
 text.
 
-%pre
-    %{_sbindir}/texlive.post
-
 %post
     %{_sbindir}/texlive.post
-
-%preun
-    if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-    fi
 
 %postun
     if [ $1 -eq 0 ]; then
@@ -57,7 +49,6 @@ text.
 %doc %{_texmfdistdir}/doc/latex/animate/files/mailto.eps
 %doc %{_texmfdistdir}/doc/latex/animate/files/scarab.mp
 %doc %{_texmfdistdir}/doc/latex/animate/files/timeline.txt
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -68,5 +59,3 @@ text.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
