@@ -1,16 +1,16 @@
-# revision 24901
+# revision 26643
 # category Package
-# catalog-ctan /macros/latex/contrib/animate
-# catalog-date 2011-12-21 10:39:14 +0100
-# catalog-license lppl
+# catalog-ctan undef
+# catalog-date undef
+# catalog-license undef
 # catalog-version undef
 Name:		texlive-animate
-Version:	20111221
-Release:	2
-Summary:	Create PDF animations from graphics files and inline graphics
+Version:	20120807
+Release:	1
+Summary:	TeXLive animate package
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/animate
-License:	LPPL
+URL:		http://tug.org/texlive
+License:	http://www.tug.org/texlive/LICENSE.TL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/animate.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/animate.doc.tar.xz
 BuildArch:	noarch
@@ -19,11 +19,7 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-The package provides an interface to create portable,
-JavaScript driven PDF animations from sets of graphics files or
-from inline graphics, such as LaTeX picture environment,
-PSTricks or pgf/TikZ generated pictures, or just from typeset
-text.
+TeXLive animate package.
 
 %post
     %{_sbindir}/texlive.post
@@ -45,10 +41,11 @@ text.
 %doc %{_texmfdistdir}/doc/latex/animate/files/bye_1.eps
 %doc %{_texmfdistdir}/doc/latex/animate/files/bye_2.eps
 %doc %{_texmfdistdir}/doc/latex/animate/files/bye_3.eps
+%doc %{_texmfdistdir}/doc/latex/animate/files/click.mp3
 %doc %{_texmfdistdir}/doc/latex/animate/files/exp.mp
 %doc %{_texmfdistdir}/doc/latex/animate/files/mailto.eps
+%doc %{_texmfdistdir}/doc/latex/animate/files/pstmetronome.tex
 %doc %{_texmfdistdir}/doc/latex/animate/files/scarab.mp
-%doc %{_texmfdistdir}/doc/latex/animate/files/timeline.txt
 
 #-----------------------------------------------------------------------
 %prep
