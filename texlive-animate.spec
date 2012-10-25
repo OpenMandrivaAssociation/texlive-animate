@@ -1,16 +1,16 @@
-# revision 26643
+# revision 27591
 # category Package
-# catalog-ctan undef
-# catalog-date undef
-# catalog-license undef
+# catalog-ctan /macros/latex/contrib/animate
+# catalog-date 2012-09-04 10:37:09 +0200
+# catalog-license lppl
 # catalog-version undef
 Name:		texlive-animate
-Version:	20120807
+Version:	20120904
 Release:	1
-Summary:	TeXLive animate package
+Summary:	Create PDF animations from graphics files and inline graphics
 Group:		Publishing
-URL:		http://tug.org/texlive
-License:	http://www.tug.org/texlive/LICENSE.TL
+URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/animate
+License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/animate.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/animate.doc.tar.xz
 BuildArch:	noarch
@@ -19,7 +19,11 @@ Requires(pre):	texlive-tlpkg
 Requires(post):	texlive-kpathsea
 
 %description
-TeXLive animate package.
+The package provides an interface to create portable,
+JavaScript driven PDF animations from sets of graphics files or
+from inline graphics, such as LaTeX picture environment,
+PSTricks or pgf/TikZ generated pictures, or just from typeset
+text.
 
 %post
     %{_sbindir}/texlive.post
