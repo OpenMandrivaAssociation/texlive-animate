@@ -1,11 +1,11 @@
-# revision 27591
+# revision 31766
 # category Package
 # catalog-ctan /macros/latex/contrib/animate
-# catalog-date 2012-09-04 10:37:09 +0200
+# catalog-date 2013-07-19 14:55:32 +0200
 # catalog-license lppl
 # catalog-version undef
 Name:		texlive-animate
-Version:	20120904
+Version:	20130719
 Release:	1
 Summary:	Create PDF animations from graphics files and inline graphics
 Group:		Publishing
