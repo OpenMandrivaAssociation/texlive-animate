@@ -1,12 +1,6 @@
-# revision 33287
-# category Package
-# catalog-ctan /macros/latex/contrib/animate
-# catalog-date 2014-03-25 20:37:10 +0100
-# catalog-license lppl
-# catalog-version undef
 Name:		texlive-animate
-Version:	20140325
-Release:	4
+Version:	20170930
+Release:	1
 Summary:	Create PDF animations from graphics files and inline graphics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/animate
@@ -35,21 +29,8 @@ text.
 
 #-----------------------------------------------------------------------
 %files
-%{_texmfdistdir}/tex/latex/animate/animate.sty
-%{_texmfdistdir}/tex/latex/animate/animfp.sty
-%doc %{_texmfdistdir}/doc/latex/animate/ChangeLog
-%doc %{_texmfdistdir}/doc/latex/animate/README
-%doc %{_texmfdistdir}/doc/latex/animate/animate.pdf
-%doc %{_texmfdistdir}/doc/latex/animate/animate.tex
-%doc %{_texmfdistdir}/doc/latex/animate/files/bye_0.eps
-%doc %{_texmfdistdir}/doc/latex/animate/files/bye_1.eps
-%doc %{_texmfdistdir}/doc/latex/animate/files/bye_2.eps
-%doc %{_texmfdistdir}/doc/latex/animate/files/bye_3.eps
-%doc %{_texmfdistdir}/doc/latex/animate/files/click.mp3
-%doc %{_texmfdistdir}/doc/latex/animate/files/exp.mp
-%doc %{_texmfdistdir}/doc/latex/animate/files/mailto.eps
-%doc %{_texmfdistdir}/doc/latex/animate/files/pstmetronome.tex
-%doc %{_texmfdistdir}/doc/latex/animate/files/scarab.mp
+%{_texmfdistdir}/tex/latex/animate
+%doc %{_texmfdistdir}/doc/latex/animate
 
 #-----------------------------------------------------------------------
 %prep
