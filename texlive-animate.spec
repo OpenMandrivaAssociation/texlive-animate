@@ -1,5 +1,5 @@
 Name:		texlive-animate
-Version:	20190124
+Version:	20190308
 Release:	1
 Summary:	Create PDF animations from graphics files and inline graphics
 Group:		Publishing
