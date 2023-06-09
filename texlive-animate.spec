@@ -1,6 +1,6 @@
 Name:		texlive-animate
-Version:	64401
-Release:	2
+Version:	67123
+Release:	1
 Summary:	Create PDF animations from graphics files and inline graphics
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/animate
